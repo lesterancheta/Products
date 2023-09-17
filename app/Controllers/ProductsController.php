@@ -11,6 +11,12 @@ class ProductsController extends BaseController
     {
         $this->product = new \App\Models\ProductModel();
     }
+    public function delete($id)
+    {
+        $this->product->delete($id);
+        return redirect()->to('/products');
+    }
+
     public function save()
     {
         $data = [
