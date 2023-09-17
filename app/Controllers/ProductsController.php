@@ -13,7 +13,17 @@ class ProductsController extends BaseController
     }
     public function save()
     {
-        
+        $data = [
+
+            'UPC'=> $this->request->getVar('UPC'),
+            'Product_Name'=> $this->request->getVar('Product_Name'),
+            'Price'=> $this->request->getVar('Price'),
+            'Quantity'=> $this->request->getVar('Quantity'),
+            'Created_at'=> $this->request->getVar('Created_at'),
+        ];
+        $this ->product->save($data);
+        return redirect()->to('/products');
+           
     }
     public function product($product)
     {
