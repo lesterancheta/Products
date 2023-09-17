@@ -1,0 +1,65 @@
+CRITICAL - 2023-09-17 21:04:10 --> syntax error, unexpected token "&"
+in APPPATH\Controllers\ProductsController.php on line 20.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Products\\app\\Controllers\\ProductsController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProductsController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProductsController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\ProductsController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Products\\public\\index.php')
+CRITICAL - 2023-09-17 21:04:42 --> Call to a member function findAll() on null
+in APPPATH\Controllers\ProductsController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductsController->Ancheta()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Products\\public\\index.php')
+CRITICAL - 2023-09-17 21:06:18 --> Call to a member function findAll() on null
+in APPPATH\Controllers\ProductsController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductsController->Ancheta()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Products\\public\\index.php')
+CRITICAL - 2023-09-17 21:07:09 --> Undefined variable $data
+in APPPATH\Controllers\ProductsController.php on line 21.
+ 1 APPPATH\Controllers\ProductsController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\Products\\app\\Controllers\\ProductsController.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductsController->Ancheta()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Products\\public\\index.php')
+CRITICAL - 2023-09-17 21:07:32 --> Call to a member function Ancheta() on null
+in APPPATH\Controllers\ProductsController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductsController->Ancheta()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Products\\public\\index.php')
+CRITICAL - 2023-09-17 21:08:02 --> Call to a member function findAll() on null
+in APPPATH\Controllers\ProductsController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductsController->Ancheta()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Products\\public\\index.php')
+CRITICAL - 2023-09-17 21:08:27 --> Call to undefined function App\Controllers\new\App\Models\ProductModel()
+in APPPATH\Controllers\ProductsController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\ProductsController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Products\\public\\index.php')
+CRITICAL - 2023-09-17 21:21:26 --> Undefined variable $products
+in APPPATH\Views\product.php on line 18.
+ 1 APPPATH\Views\product.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'C:\\laragon\\www\\Products\\app\\Views\\product.php', 18)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Products\\app\\Views\\product.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('product', [], true)
+ 5 APPPATH\Controllers\ProductsController.php(21): view('product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductsController->Ancheta()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Products\\public\\index.php')
