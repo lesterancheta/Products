@@ -137,7 +137,7 @@
                     <td><?=  $pr['Price' ]?></td>
                     <td><?=  $pr['Quantity' ]?></td>
                     <td><?=  $pr['Created_at' ]?></td>
-                    <td><a href="/delete/<?=$pr['ID'] ?>" class="table-button">Delete</a></td>
+                    <td><a href="/delete/<?=$pr['ID'] ?>" class="table-button">Delete</a><a href="/edit/<?= $pr['ID']?>">Edit</a> </td>
                 </tr>
             <?php endforeach; ?>
         </table>

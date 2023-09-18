@@ -11,12 +11,16 @@ class ProductsController extends BaseController
     {
         $this->product = new \App\Models\ProductModel();
     }
-    public function delete($id)
-    {
-        $this->product->delete($id);
+     public function delete($ID)
+     {
+        $this->product->delete($ID);
         return redirect()->to('/products');
-    }
-
+     }
+     public function edit($ID)
+     {
+        $data['product'] = $this->product->findAll();
+        return view('product', $data);
+     }
     public function save()
     {
         $data = [
@@ -27,7 +31,7 @@ class ProductsController extends BaseController
             'Quantity'=> $this->request->getVar('Quantity'),
             'Created_at'=> $this->request->getVar('Created_at'),
         ];
-        $this ->product->save($data);
+        $this->product->save($data);
         return redirect()->to('/products');
            
     }
